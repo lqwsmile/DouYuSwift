@@ -24,30 +24,25 @@ extension HomeViewController {
     }
     
     private func setNavigation() {
-        let leftItemButton = UIButton()
-        leftItemButton.setImage(UIImage(named:"logo"), for: UIControlState.normal)
-        leftItemButton.sizeToFit()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftItemButton)
+//        let leftItemButton = UIButton()
+//        leftItemButton.setImage(UIImage(named:"logo"), for: UIControlState.normal)
+//        leftItemButton.sizeToFit()
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftItemButton)
         
-        let historyBtn = UIButton()
+        navigationItem.leftBarButtonItem = UIBarButtonItem(normalImage: "logo")
+        
         let size = CGSize(width: 40, height: 40)
-        let point = CGPoint(x: 0, y: 0)
         
-        historyBtn.setImage(UIImage(named:"image_my_history"), for: UIControlState.normal)
-        historyBtn.setImage(UIImage(named:"Image_my_history_click"), for: UIControlState.highlighted)
-        historyBtn.frame = CGRect(origin: point, size: size);
+        let historyItem = UIBarButtonItem(normalImage: "image_my_history", highlightedImage: "Image_my_history_click", size: size)
+        let qrcodeItem = UIBarButtonItem(normalImage: "Image_scan", highlightedImage: "Image_scan_click", size: size)
+        let searchItem = UIBarButtonItem(normalImage: "btn_search", highlightedImage: "btn_search_clicked", size: size)
+//        
+//        
+//        let historyItem = UIBarButtonItem.createItem(normalImage: "image_my_history", highlightedImage: "Image_my_history_click", size: size)
+//        let qrcodeItem = UIBarButtonItem.createItem(normalImage: "Image_scan", highlightedImage: "Image_scan_click", size: size)
+//        let searchItem = UIBarButtonItem.createItem(normalImage: "btn_search", highlightedImage: "btn_search_clicked", size: size)
         
-        let qrcodeBtn = UIButton()
-        qrcodeBtn.setImage(UIImage(named:"Image_scan"), for: UIControlState.normal)
-        qrcodeBtn.setImage(UIImage(named:"Image_scan_click"), for: UIControlState.highlighted)
-        qrcodeBtn.frame = CGRect(origin: point, size: size);
-        
-        let searchBtn = UIButton()
-        searchBtn.setImage(UIImage(named:"btn_search"), for: UIControlState.normal)
-        searchBtn.setImage(UIImage(named:"btn_search_clicked"), for: UIControlState.highlighted)
-        searchBtn.frame = CGRect(origin: point, size: size);
-        
-        navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: historyBtn), UIBarButtonItem(customView: qrcodeBtn), UIBarButtonItem(customView: searchBtn)]
+        navigationItem.rightBarButtonItems = [historyItem, qrcodeItem,searchItem]
     }
     
 }

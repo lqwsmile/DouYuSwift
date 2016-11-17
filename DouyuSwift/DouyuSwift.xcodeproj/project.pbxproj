@@ -17,6 +17,7 @@
 		1182885D1DDC5EEF00149E9F /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1182885A1DDC5EEF00149E9F /* Follow.storyboard */; };
 		118288621DDC5EF800149E9F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1182885F1DDC5EF800149E9F /* Profile.storyboard */; };
 		118288641DDC5F3600149E9F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118288631DDC5F3600149E9F /* HomeViewController.swift */; };
+		118288671DDD3D7000149E9F /* UIBarbuttonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118288661DDD3D7000149E9F /* UIBarbuttonItem-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1182885A1DDC5EEF00149E9F /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
 		1182885F1DDC5EF800149E9F /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		118288631DDC5F3600149E9F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		118288661DDD3D7000149E9F /* UIBarbuttonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarbuttonItem-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		1182883A1DDC4D6100149E9F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				118288651DDD3D4700149E9F /* Extension */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -255,6 +258,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		118288651DDD3D4700149E9F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				118288661DDD3D7000149E9F /* UIBarbuttonItem-Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -333,6 +344,7 @@
 			files = (
 				1182884E1DDC5ECF00149E9F /* MainViewController.swift in Sources */,
 				118288241DDC450F00149E9F /* AppDelegate.swift in Sources */,
+				118288671DDD3D7000149E9F /* UIBarbuttonItem-Extension.swift in Sources */,
 				118288641DDC5F3600149E9F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
